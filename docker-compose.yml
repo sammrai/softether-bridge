@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-  softether-br:
-    image: bridge
-    container_name: softether-br
+  softether-bridge:
+    image: sammrai/softether-bridge:latest
+    container_name: softether-bridge
     environment:
       - USERNAME=vpnname
       - PASSWORD=vpnpassword
