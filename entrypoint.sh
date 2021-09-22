@@ -21,7 +21,7 @@ vpncmd_hub () {
 # wait until server comes up
 while : ; do
   set +e
-  vpncmd_hub statusget
+  vpncmd_hub statusget 2>&1 > /dev/null
   [[ $? -eq 0 ]] && break
   set -e
   sleep 1
