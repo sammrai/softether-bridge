@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  softether-br:
+    image: bridge
+    container_name: softether-br
+    environment:
+      - USERNAME=vpnname
+      - PASSWORD=vpnpassword
+      - PSK=vpnsecret
+      - VPN_SERVER=your.vpn.server:5555
