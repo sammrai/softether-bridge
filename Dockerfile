@@ -5,7 +5,7 @@ WORKDIR /usr/local/vpnbridge
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
-    apt-get -y -q --no-install-recommends install iptables gcc make wget gcc-multilib && \
+    apt-get -y -q --no-install-recommends install iptables gcc make wget gcc-multilib procps && \
     apt-get clean && \
     rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
     wget http://www.softether-download.com/files/softether/${VERSION}-tree/Linux/SoftEther_VPN_Bridge/64bit_-_Intel_x64_or_AMD64/softether-vpnbridge-${VERSION}-linux-x64-64bit.tar.gz -O /tmp/softether-vpnbridge.tar.gz &&\
