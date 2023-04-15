@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:bullseye-slim
 
 ENV VERSION v4.38-9760-rtm-2021.08.17
 WORKDIR /usr/local/vpnbridge
